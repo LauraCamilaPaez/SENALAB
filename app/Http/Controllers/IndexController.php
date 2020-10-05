@@ -8,6 +8,6 @@ class IndexController extends Controller
 {
     public function __invoke()
     {
-        return view('Sena-lab.certificado');
+        return view('Sena-lab.home');
     }
 }
