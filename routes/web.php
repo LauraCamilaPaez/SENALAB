@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\CertificadoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
-Route::get('/acercade', 'App\Http\Controllers\AcercadeController@index')->name('acercade');
-Route::get('/portafolio', 'App\Http\Controllers\PortafolioController@index')->name('portafolio');
-Route::get('/contacto', 'App\Http\Controllers\ContactoController@index')->name('contacto');
+
+Route::get('/', IndexController::class);
+
+Route::resource('certificado', CertificadoController::class);
