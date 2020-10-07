@@ -6,5 +6,5 @@
     <h1>Hola mundo</h1>
 
     
-    <a href="{{route('Sena-lab.certificado')}}">Certificado  </a>
+    <a href="{{route('certificado.index')}}">Certificado  </a>
 @endsection
