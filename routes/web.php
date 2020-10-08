@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
-use App\Http\Controllers\CertificadoController;
+// cuse App\Http\Controllers\CertificadoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +17,4 @@ use App\Http\Controllers\CertificadoController;
 
 Route::get('/', IndexController::class);
 
-Route::resource('certificado', CertificadoController::class);
+// Route::resource('certificado', CertificadoController::class);

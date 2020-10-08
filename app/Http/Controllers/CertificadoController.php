@@ -8,7 +8,7 @@ class CertificadoController extends Controller
 {
     public function index(){
         
-        return view('Sena-lab.certificado');
+        return view('certificado.index');
 
     }
 }
