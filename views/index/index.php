@@ -31,7 +31,7 @@
                     <a class="nav-link" href="paginas/contactanos.html">Contactanos <span class="sr-only"></span></a>
                 </li> 
                 <li class="nav-item dropdown">
-                    <a class=" nav-link  text-right" href="?m=index&c=Usuarios" >Ingresar</a>
+                    <a class=" nav-link  text-right" href="?m=login&c=Index" >Ingresar</a>
                 </li>                    
             </ul>                
         </div>
