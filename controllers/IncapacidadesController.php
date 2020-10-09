@@ -8,11 +8,14 @@ class IncapacidadesController extends Incapacidad{
     
     }
 
+
+
        
     public function create(){
       
 
         $detino="assets/archivos/";
+        
         $file_name = $_FILES['pdf']['name'];
         $file_size = $_FILES['pdf']['size'];
         $file_tmp = $_FILES['pdf']['tmp_name'];
@@ -21,8 +24,10 @@ class IncapacidadesController extends Incapacidad{
 
         $route_pdf="assets/archivos/".$file_name;
         move_uploaded_file($file_tmp,"assets/archivos/".basename($file_name));
+        
         header("location:?c=Incapacidades&m=index");
-        parent::store(
+        
+        parent::insertar(
         $_POST['correo'],
         $_POST['descripcion'],
         $route_pdf
