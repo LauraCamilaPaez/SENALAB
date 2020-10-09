@@ -69,9 +69,9 @@
         <a href="#" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Editar Usuario</a>
         
         <div class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Enviar Incapacidades
-            </button>
+
+            <a href="?m=index&c=Incapacidades" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Enviar Incapacidad</a>
+
             <div class="dropdown-menu">
                 <div class="custom-file">
                     <input type="file" class="custom-file-input" id="customFileLang" lang="en">

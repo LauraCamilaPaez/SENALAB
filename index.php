@@ -1,6 +1,6 @@
 <?php 
 
-// require_once('core/core.php');
+require_once('core/core.php');
  //c = clase ejemplo clase UsuariosController solo se pone Usuarios
  $c=isset($_REQUEST['c']) ? $_REQUEST['c'] : 'Index';
  // m = metodo o funcion o vista ejemplo index()
