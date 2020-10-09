@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="shortcut icon" href="assets/img/sena.png">
-	<title>Administrador</title>
+	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="assets/all/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -37,7 +37,7 @@
             	   </div>
             	</div>
                 <a href="?m=index&c=Usuarios">&iquest;Olvid&oacute; su contrase&ntilde;a?</a>
-                <a href="?m=index&c=Admin" type="submit" class="btn" value="Login">Login</a>
+                <a href="?m=index&c=Admin" type="submit" class="btn" value="Login"><center>Login</center></a>
                 <!-- <input type="submit" href="?m=index&c=Usuarios" class="btn" value="Login"> -->
                 
             </form>
