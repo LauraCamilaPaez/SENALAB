@@ -37,7 +37,7 @@
             	   </div>
             	</div>
                 <a href="?m=index&c=Usuarios">&iquest;Olvid&oacute; su contrase&ntilde;a?</a>
-                <a href="?m=index&c=Usuarios" type="submit" class="btn" value="Login">Login</a>
+                <a href="?m=index&c=Admin" type="submit" class="btn" value="Login">Login</a>
                 <!-- <input type="submit" href="?m=index&c=Usuarios" class="btn" value="Login"> -->
                 
             </form>

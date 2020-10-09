@@ -69,8 +69,8 @@
               Usuario
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="modulos/1_usuarios/crear-usuario.html">Crear Usuario</a>
-              <a class="dropdown-item" href="#">Editar Usuario</a>
+              <a class="dropdown-item" href="?c=Admin&m=create">Crear Usuario</a>
+              <a class="dropdown-item" href="?c=Admin&m=create">Editar Usuario</a>
               <a class="dropdown-item" href="#">Eliminar Usuario</a>
               
             </div>
