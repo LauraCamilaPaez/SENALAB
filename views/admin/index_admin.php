@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/estyle.css">
-    <title>Document</title>
+    <title>Index Administrador</title>
 </head>
 <body style="background-color: #E1E1E1;">
     <div class="container ">
@@ -34,7 +34,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-right" href="#">Configuración</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-right" href="../index.html">Salir</a>
+                            <a class="dropdown-item text-right" href="index.php">Salir</a>
                         </div>
                     </li>   
                 </ul>

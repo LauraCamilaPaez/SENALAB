@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Index Usuario</title>
 </head>
 <body style="background-color: #E1E1E1;">
     <div class="container ">
@@ -42,8 +42,8 @@
         </nav>
 
     
-        <section >
-            <div class="col-9 py-3  ">
+        <section>
+            <div class="col-9 py-3 mx-auto">
                 <div class="card">
                     <div style="background: #e57816;" class="card-header text-center text-light pb-4">
                         Página principal usuario

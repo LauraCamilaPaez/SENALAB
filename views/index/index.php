@@ -13,7 +13,7 @@
 <!-- barra de navegacion -->
 
     <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
-        <a class="navbar-brand " href="index.html ">
+        <a class="navbar-brand" href="index.php">
             <img src="assets/img/lsena.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
             Sena-lab
         </a>
@@ -25,10 +25,10 @@
 
             <ul class="navbar-nav ">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio <span class="sr-only"></span></a>
+                    <a class="nav-link" href="index.php">Inicio <span class="sr-only"></span></a>
                 </li> 
                 <li class="nav-item active">
-                    <a class="nav-link" href="paginas/contactanos.html">Contactanos <span class="sr-only"></span></a>
+                    <a class="nav-link" href="">Contactanos <span class="sr-only"></span></a>
                 </li> 
                 <li class="nav-item dropdown">
                     <a class=" nav-link  text-right" href="?m=login&c=Index" >Ingresar</a>

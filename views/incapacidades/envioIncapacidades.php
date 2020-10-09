@@ -12,7 +12,7 @@
     
 <div class="container">
     <div class="row">
-        <div class="col-md-8  offset-md-2">
+        <div class="col-md-8  offset-md-4">
             <form action="?c=Incapacidades&m=create" method = "POST" enctype = "multipart/form-data">
                 <div class="form-group"><br>
                 <br>
@@ -22,9 +22,9 @@
                     <h3>descripcion</h3>
                     <input type="text" name="descripcion" class="form-control" placeholder="Motivo incapacidad" require>
                     <h3>Pdf incapacidad</h3>
-                    <center><input type = "file" name = "pdf"  require/></center>
+                    <center><input type="file" name="pdf"  require/></center>
                     <br>
-                        <center><input type = "submit"/></center>
+                        <center><input type="submit"/></center>
                 </div>
             </form>
         </div>
