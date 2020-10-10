@@ -50,7 +50,6 @@
                         <th>nombre</th>
                         <th>descripcion</th>
                         <th>pdf</th>
-                        <th colspan=""></th>
                     </tr>
                      <?php  foreach(parent::c()  as $r){    ?>
                   
@@ -58,13 +57,6 @@
                         <td><?php echo $r->correo ?></td>
                         <td><?php echo $r->descripcion ?></td>
                         <td><?php echo $r->pdf ?></td>
-                        
-                        <td>
-                            
-
-                           
-                           
-                        </td>
                     </tr>
      
                     <?php } ?>

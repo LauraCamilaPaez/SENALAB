@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">                
                 <ul class="navbar-nav col-1 justify-content-start">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index-admin.html">Inicio <span class="sr-only"></span></a>
+                            <h3 >Inicio</h3>
                     </li>                                        
                 </ul>
                 <ul class="navbar-nav col-9 justify-content-center"></ul>
@@ -34,7 +34,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-right" href="#">Configuración</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-right" href="index.php">Salir</a>
+                            <a class="dropdown-item text-right" href="?c=index$m=index">Salir</a>
                         </div>
                     </li>   
                 </ul>
@@ -51,6 +51,7 @@
                 <th scope="col">Correo</th>
                 <th scope="col">Telefono</th>
                 <th scope="col">Incapacidades</th>
+                <th colspan=""></th>
               </tr>
             </thead>
             <tbody >
@@ -60,6 +61,8 @@
                 <td class="table-light">J@gmail.com</td>
                 <td class="table-light">34334324</td>
                 <td class="table-light">PDF</td>
+
+                            
               </tr>
             </tbody>
           </table>
@@ -73,7 +76,7 @@
 
 
 
-        <footer class="text-center p-3 mb-2 bg-dark text-light"  >
+        <footer class="text-center p-3 mb-2 bg-dark text-light">
 
             <p>Todos los derechos reservados a Sena-lab</p>
             <p class=" "> Copyright © 2020 </p>
