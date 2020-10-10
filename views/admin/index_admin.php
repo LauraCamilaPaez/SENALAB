@@ -86,7 +86,7 @@
             </button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="">Crear Certificado</a>
-              <a class="dropdown-item" href="#">Editar Certificado</a>
+              <a class="dropdown-item" href="?c=Certificados&m=index">Editar Certificado</a>
               <a class="dropdown-item" href="#">Eliminar Certificado</a>
               
             </div>
