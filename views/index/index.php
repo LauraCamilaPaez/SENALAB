@@ -25,7 +25,7 @@
 
             <ul class="navbar-nav ">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Inicio <span class="sr-only"></span></a>
+                    <h3 >Inicio</h3>
                 </li> 
                 <li class="nav-item active">
                     <a class="nav-link" href="">Contactanos <span class="sr-only"></span></a>

@@ -43,9 +43,9 @@
             <form action="?c=Incapacidades&m=create" method = "POST" enctype = "multipart/form-data" class="form-incapacidades">
                 <div class="form-group">
                     <label class="label-incapacidades" for="form">Correo</label>
-                    <input type="correo" name="correo" class="form-control" placeholder="Introduce tu correo" require>
+                    <input type="correo" name="correo" class="form-control" placeholder="Introduce tu correo" required>
                     <label class="label-incapacidades" for="form">Descripción incapacidad</label>
-                    <input type="text" name="descripcion" class="form-control" placeholder="Motivo incapacidad" require>
+                    <input type="text" name="descripcion" class="form-control" placeholder="Motivo incapacidad" required>
                     <label class="label-incapacidades" for="form">Agregar Incapacidad</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                     <button type="submit" class="btn-primary">Enviar</button>

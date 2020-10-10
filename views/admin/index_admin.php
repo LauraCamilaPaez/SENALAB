@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">                
                 <ul class="navbar-nav col-1 justify-content-start">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index-admin.html">Inicio <span class="sr-only"></span></a>
+                         <h3 >Inicio</h3>
                     </li>                                        
                 </ul>
                 <ul class="navbar-nav col-9 justify-content-center"></ul>
@@ -93,8 +93,8 @@
                 Certificados
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Crear Certificado</a>
-              <a class="dropdown-item" href="?c=Certificados&m=index">Editar Certificado</a>
+              <a class="dropdown-item" href="?c=Certificados&m=index">Crear Certificado</a>
+              <a class="dropdown-item" href="#">Editar Certificado</a>
               <a class="dropdown-item" href="#">Eliminar Certificado</a>
               
             </div>
