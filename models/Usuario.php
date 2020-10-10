@@ -22,6 +22,17 @@ class Usuario extends DB{
             die("error".$e->getMessage());
         }
     }
+
+    public function consultarId($id){
+        try{
+            $q=parent::connect()->prepare("SELECT * FROM usuario WHERE id_usuario = $id");
+            $q->execute();
+            return $q->fetch(PDO::FETCH_OBJ);
+          }catch(Exception $e){
+             die($e->getMessage());
+          }
+    }
+
 }
 
 

@@ -22,6 +22,18 @@ class AdminController extends Admin{
 		parent::insertar($nombre,$apellido,$correo,$pass,$rol,$tipo_documento,$documento);
 		header('location:?c=Admin&m=index');
 	}
+
+	public function search_ajax(){
+        $nombre='%'.$_POST['dato'].'%';
+        foreach (parent::searchM($nombre) as $q){
+          
+  
+          echo $q->nombre.' |'.$q->apellido.' | '.$q->correo.' | '.$q->rol.'<br>';
+        }
+        
+	}
+	  
+
 }
 
 
