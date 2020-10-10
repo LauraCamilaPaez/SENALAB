@@ -34,7 +34,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-right" href="#">Configuración</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-right" href="../index.html">Salir</a>
+                            <a class="dropdown-item text-right" href="index.php">Salir</a>
                         </div>
                     </li>   
                 </ul>

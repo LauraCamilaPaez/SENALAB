@@ -26,7 +26,7 @@ class IncapacidadesController extends Incapacidad{
         $route_pdf="assets/archivos/".$file_name;
         move_uploaded_file($file_tmp,"assets/archivos/".basename($file_name));
         
-        header("location:?c=Incapacidades&m=index");
+        header("location:?c=Usuarios&m=index");
         
         parent::insertar(
         $_POST['correo'],

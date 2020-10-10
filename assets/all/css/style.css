@@ -429,5 +429,40 @@ a:hover{
   }
 }
 
+/*envio incapacidades*/
 
+.form-incapacidades{
+  padding-top: 3rem;
+  padding-right: 28rem;
+  padding-bottom: 3rem;
+  font-size: 15px;
+  height: 400px;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.btn-primary{
+  height: 40px;
+  width: 100px;
+  border-radius: 8px; 
+}
+
+.form-control-file{
+  color: #000000;
+  padding-bottom: 2rem;
+}
+
+.label-incapacidades{
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: .5rem;
+}
+
+.container-incapacidades{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffff;
+  height: 508px;
+}

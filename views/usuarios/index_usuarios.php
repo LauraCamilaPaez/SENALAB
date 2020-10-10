@@ -11,7 +11,7 @@
     <div class="container ">
         <!-- Barra de Navegación -->
         <nav class=" navbar  navbar-dark bg-dark navbar-expand-md sticky-top">
-            <a class="navbar-brand " href="../index.html ">
+            <a class="navbar-brand " href="?c=Usuarios&m=index">
                 <img src="assets/img/lsena.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
                 Sena-lab
             </a>
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">                
                 <ul class="navbar-nav col-1 justify-content-start">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index-admin.html">Inicio <span class="sr-only"></span></a>
+                        <h3 style="">Inicio</h3>
                     </li>                                        
                 </ul>
                 <ul class="navbar-nav col-9 justify-content-center"></ul>
@@ -34,7 +34,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-right" href="#">Configuración</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-right" href="../index.html">Salir</a>
+                            <a class="dropdown-item text-right" href="index.php">Salir</a>
                         </div>
                     </li>   
                 </ul>

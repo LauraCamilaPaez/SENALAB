@@ -11,7 +11,7 @@
     <div class="container ">
  <!-- Barra de Navegación -->
  <nav class=" navbar  navbar-dark bg-dark navbar-expand-md sticky-top">
-            <a class="navbar-brand " href="../index.html ">
+            <a class="navbar-brand " href="?c=Admin&m=index">
                 <img src="assets/img/lsena.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
                 Sena-lab
             </a>
