@@ -1,6 +1,6 @@
 <?php
 
-class CertificadosController{
+class CertificadosController extends Certificado{
 
     public function index(){
 
