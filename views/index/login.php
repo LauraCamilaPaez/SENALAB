@@ -53,7 +53,7 @@
            		   </div>
            		   <div class="div">
 					  <h5>Correo</h5>
-					  <input type="email" name="email" class="input" placeholder="Correo" required>
+					  <input type="email" name="email" class="input" placeholder="" required>
 					</div>
 				</div>
 				<div class="input-div pass">
@@ -62,14 +62,14 @@
 					</div>
 					<div class="div">
            		    	<h5>Contraseña</h5>
-						<input type="password" name="password" placeholder="Contraseña" class="input" required>
+						<input type="password" name="password" placeholder="" class="input" required>
             	   </div>
             	</div>
             	<input type="submit" class="btn" value="Login">
             </form>
         </div>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="assets/all/js/main.js"></script>
 
 </body>
 </html>

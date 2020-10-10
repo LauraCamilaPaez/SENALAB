@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/all/css/style.css">
     <title>Index Usuario</title>
 </head>
 <body style="background-color: #E1E1E1;">
@@ -42,6 +42,9 @@
             </div>
         </nav>
 
+        <?php
+        $usuario = $_SESSION['user'];        
+        ?>
     
         <section>
             <div class="col-9 py-3 mx-auto">
@@ -50,14 +53,14 @@
                         Página principal usuario
                     </div>
                     <div class="card-body esdiv">
-                        <p class="font-weight-bold m-0">Nombre</p>
-                        <p>Nombre</p>
+                    <p class="font-weight-bold m-0">Nombre</p>
+                        <td><?php echo $usuario->nombre ?></td>
                         <p class="font-weight-bold m-0">Apellido</p>
-                        <p>Apellido</p>
+                        <td<?php echo $usuario->apellido ?>></td>
                         <p class="font-weight-bold m-0">Email</p>
-                        <p>Email</p>
+                        <td><?php echo $usuario->correo ?></td>
                         <p class="font-weight-bold m-0">Rol</p>
-                        <p>Rol</p>
+                        <td><?php echo $usuario->fk_rol ?></td>
                     </div>
                 </div>
             </div>

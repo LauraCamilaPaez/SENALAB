@@ -49,10 +49,11 @@
         <div class="inputfield">
           <label>Cargo</label>
           <div class="custom_select">
-            <select name="rol" >
+            <select name="fk_rol" >
               <option value="">Seleccionar Cargo</option>
-              <option value="Instructor">Instructor</option>
-              <option value="administrador">Administrador</option>
+              <?php foreach(parent::consultarRol() as $r) { ?>
+                <option value="<?php echo $r->id_rol ?>"><?php echo( $r->rol)?></option>
+              <?php } ?>
             </select>
           </div>
        </div>  

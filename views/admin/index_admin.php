@@ -41,13 +41,9 @@
             </div>
         </nav>
 
-
         <?php
-        
-        foreach(parent::request() as $request){
-        
+        $usuario = $_SESSION['user'];        
         ?>
-
 
         <section >
             <div class="col-9 py-3 mx-auto  ">
@@ -57,19 +53,23 @@
                     </div>
                     <div class="card-body esdiv">
                         <p class="font-weight-bold m-0">Nombre</p>
-                        <td><?php echo $request->nombre ?> </td>
+                        <td><?php echo $usuario->nombre ?></td>
                         <p class="font-weight-bold m-0">Apellido</p>
-                        <td><?php echo $request->apellido ?></td>
+                        <td<?php echo $usuario->apellido ?>></td>
                         <p class="font-weight-bold m-0">Email</p>
-                        <td><?php echo $request->correo ?></td>
+                        <td><?php echo $usuario->correo ?></td>
                         <p class="font-weight-bold m-0">Rol</p>
-                        <td><?php echo $request->rol ?></td>
+                        <td><?php echo $usuario->fk_rol ?></td>
                     </div>
                 </div>
             </div>
         </section>
+       
+       
 
-        <?php  } ?>
+
+
+
 
     <div class="d-flex justify-content-around mar">
         <div class="btn-group">

@@ -4,7 +4,7 @@ class Admin extends DB{
 
     public function consultar(){
         try{
-            $stm=parent::connect()->prepare("SELECT id_usuario, nombre, apellido, correo, password_user, rol, tipo_documento, documento");
+            $stm=parent::connect()->prepare("SELECT id_usuario, fk_rol, nombre, apellido, correo, password_user , tipo_documento, documento");
             $stm->execute();
             return $stm->fetchAll(PDO::FETCH_OBJ);
         }catch(Exception $e){
@@ -12,49 +12,45 @@ class Admin extends DB{
         }
     }
 
-    public function insertar($nombre, $apellido, $correo, $password_user, $rol, $tipo_documento, $documento){
+    public function insertar($fk_rol, $nombre, $apellido, $correo, $password_user,  $tipo_documento, $documento){
         try{
-            $stm = parent::connect()->prepare("INSERT INTO usuario(nombre,apellido,correo,password_user,rol,tipo_documento,documento) VALUES ('$nombre', '$apellido', '$correo', '$password_user', '$rol', '$tipo_documento', '$documento') ");
+            $stm = parent::connect()->prepare("INSERT INTO usuario(fk_rol ,nombre,apellido,correo,password_user,tipo_documento,documento) VALUES ('$fk_rol', '$nombre', '$apellido', '$correo', '$password_user',  '$tipo_documento', '$documento') ");
             $stm->execute();
         }catch(Exception $e){
             die($e->getMessage());
         }
     }
 
-
-    public function searchM(){
+    public function requestEmail($email, $password){
         try{
-          $q=parent::connect()->prepare("SELECT * FROM usuario ");
-          $q->execute();
-          return $q->fetchAll(PDO::FETCH_OBJ);
+            $stm = parent::connect()->prepare('SELECT * FROM usuario WHERE correo = ? AND password_user = ? ');
+            $stm->bindParam(1,$email,PDO::PARAM_STR);
+            $stm->bindParam(2,$password,PDO::PARAM_STR);
+            $stm->execute();
+            return $stm->fetch(PDO::FETCH_OBJ);
         }catch(Exception $e){
-           die($e->getMessage());
+            die("error".$e->getMessage());
+        }
+    }
+    public function consultarRol(){
+        try{
+            $stm = parent::connect()->prepare("SELECT * FROM rol");
+            $stm->execute();
+            return $stm->fetchAll(PDO::FETCH_OBJ);
+        }catch(Exception $e){
+            die($e->getMessage());
         }
     }
 
-
-    public function consultarId($id_usuario){
+    public function consultraId($id){
         try{
-            $q=parent::connect()->prepare("SELECT * FROM usuario WHERE id_usuario = $id_usuario");
-            $q->execute();
-            return $q->fetch(PDO::FETCH_OBJ);
-          }catch(Exception $e){
-             die($e->getMessage());
-          }
-    }
-
-    public function request(){
-        try{
-          $q=parent::connect()->prepare("SELECT * FROM usuario LIMIT 1");
-          $q->execute();
-          return $q->fetchAll(PDO::FETCH_OBJ);
+            $stm = parent::connect()->prepare('SELECT * FROM usuario  WHERE id_usuario = $id');
+            $stm->execute();
+            return $stm->fetch(PDO::FETCH_OBJ);
         }catch(Exception $e){
-           die($e->getMessage());
+            die($e->getMessage());
         }
     }
-
-  
-
 
 }
 

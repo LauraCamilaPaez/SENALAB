@@ -10,7 +10,7 @@ class LoginController extends Login {
     
     public function __construct(){
         try{
-            $this->usuario = new Usuario();
+            $this->usuario = new Admin();
         }catch(Exception $e){
 
         }
@@ -22,18 +22,21 @@ class LoginController extends Login {
         $password = $_POST['password'];
         
         $usuario = $this->usuario->requestEmail($email, $password);
-        if($email == @$usuario->correo && $password == @$usuario->password_user){
-            session_start();
-            $_SESSION['user']=$usuario;
-            header('location: ?c=Admin&m=index');
+        if($email == $usuario->correo && $password == $usuario->password_user & $usuario->fk_rol == 1){
+            $_SESSION['id_usuario']=$usuario;
+            header('location: ?c=Admin&m=index&id=');
+
+        }elseif($email == $usuario->correo && $password == $usuario->password_user & $usuario->fk_rol == 2){
+            $_SESSION['id_usuario']=$usuario;
+            header('location: ?c=Usuarios&m=index&id=');
         }else{
-            header('location: ?class=Login&view=index&error=error');
+            header('location: ?c=Login&m=index&error=error');
         }
     }
 
     public function destroy(){
         session_destroy();
-        header('location:?class=Login&view=index');
+        header('location:?c=Login&m=index');
         exit();
 
     }
