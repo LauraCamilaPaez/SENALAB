@@ -20,9 +20,10 @@ class LoginController extends Login {
         
         $email = $_POST['email'];
         $password = $_POST['password'];
-
+        
         $usuario = $this->usuario->requestEmail($email, $password);
         if($email == @$usuario->correo && $password == @$usuario->password_user){
+            session_start();
             $_SESSION['user']=$usuario;
             header('location: ?c=Admin&m=index');
         }else{
@@ -33,7 +34,7 @@ class LoginController extends Login {
     public function destroy(){
         session_destroy();
         header('location:?class=Login&view=index');
-        exit;
+        exit();
 
     }
 }

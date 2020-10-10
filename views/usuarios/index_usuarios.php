@@ -1,3 +1,4 @@
+<?include ("seguridad.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">                
                 <ul class="navbar-nav col-1 justify-content-start">
                     <li class="nav-item ">
-                        <h3 style="">Inicio</h3>
+                        <h3 >Inicio</h3>
                     </li>                                        
                 </ul>
                 <ul class="navbar-nav col-9 justify-content-center"></ul>
@@ -34,7 +35,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-right" href="#">Configuración</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-right" href="index.php">Salir</a>
+                            <a class="dropdown-item text-right" href="?c=Login&m=destroy">Salir</a>
                         </div>
                     </li>   
                 </ul>

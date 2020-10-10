@@ -41,6 +41,7 @@
             </div>
         </nav>
 
+<<<<<<< Updated upstream
     
         <?php
         
@@ -48,6 +49,9 @@
         foreach(parent::request() as $request){
         
         ?>
+=======
+    <?php if(isset($_SESSION['user'])) { ?>
+>>>>>>> Stashed changes
 
         <section >
             <div class="col-9 py-3 mx-auto  ">
@@ -57,7 +61,11 @@
                     </div>
                     <div class="card-body esdiv">
                         <p class="font-weight-bold m-0">Nombre</p>
+<<<<<<< Updated upstream
                         <td><?php echo $request->nombre ?> </td>
+=======
+                        <p><?php echo $_SESSION['user']->nombre  ?></p>
+>>>>>>> Stashed changes
                         <p class="font-weight-bold m-0">Apellido</p>
                         <td><?php echo $request->apellido ?></td>
                         <p class="font-weight-bold m-0">Email</p>
@@ -71,7 +79,8 @@
 
         <?php  } ?>
     
-      
+    <?php } ?>
+
     <div class="d-flex justify-content-around mar">
         <div class="btn-group">
             <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
