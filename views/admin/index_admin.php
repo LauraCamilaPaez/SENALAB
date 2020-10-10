@@ -1,6 +1,3 @@
-<?php if(isset($_SESSION['user'])){
-
-   ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +42,12 @@
         </nav>
 
     
+        <?php
+        
+        
+        foreach(parent::request() as $request){
+        
+        ?>
 
         <section >
             <div class="col-9 py-3 mx-auto  ">
@@ -54,19 +57,20 @@
                     </div>
                     <div class="card-body esdiv">
                         <p class="font-weight-bold m-0">Nombre</p>
-                        <td><?php echo $_SESSION['user']->nombre ?> </td>
+                        <td><?php echo $request->nombre ?> </td>
                         <p class="font-weight-bold m-0">Apellido</p>
-                        <td><?php echo $_SESSION['user']->apellido ?></td>
+                        <td><?php echo $request->apellido ?></td>
                         <p class="font-weight-bold m-0">Email</p>
-                        <td><?php echo $_SESSION['user']->correo ?></td>
+                        <td><?php echo $request->correo ?></td>
                         <p class="font-weight-bold m-0">Rol</p>
-                        <td><?php echo $_SESSION['user']->rol ?></td>
+                        <td><?php echo $request->rol ?></td>
                     </div>
                 </div>
             </div>
         </section>
 
-            
+        <?php  } ?>
+    
       
     <div class="d-flex justify-content-around mar">
         <div class="btn-group">
@@ -114,4 +118,3 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-<?php }else{ header(''); } ?>

@@ -15,11 +15,11 @@ class AdminController extends Admin{
 		$nombre = $_POST['nombre'];
 		$apellido = $_POST['apellido'];
 		$correo = $_POST['correo'];
-		$pass = $_POST['pass'];
+		$password_user = $_POST['password_user'];
 		$rol = $_POST['rol'];
 		$tipo_documento = $_POST['tipo_documento'];
 		$documento = $_POST['documento'];
-		parent::insertar($nombre,$apellido,$correo,$pass,$rol,$tipo_documento,$documento);
+		parent::insertar($nombre,$apellido,$correo,$password_user,$rol,$tipo_documento,$documento);
 		header('location:?c=Admin&m=index');
 	}
 

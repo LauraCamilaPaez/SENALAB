@@ -63,7 +63,6 @@
 					<div class="div">
            		    	<h5>Contraseña</h5>
 						<input type="password" name="password" placeholder="Contraseña" class="input" required>
-           		    	<input type="password" class="input">
             	   </div>
             	</div>
             	<input type="submit" class="btn" value="Login">

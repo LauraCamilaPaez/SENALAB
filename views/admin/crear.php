@@ -17,49 +17,49 @@
     <form class="form" action="?c=Admin&m=store" method="post">
        <div class="inputfield">
           <label>Nombres</label>
-          <input type="text" name="nombre" class="input">
+          <input type="text" name="nombre" class="input" required>
        </div>  
         <div class="inputfield">
           <label>Apellidos</label>
-          <input type="text" class="input" name="apellido">
+          <input type="text" class="input" name="apellido" required>
        </div>  
        <div class="inputfield">
         <label>Tipo de Documento</label>
         <div class="custom_select">
           <select name="tipo_documento">
             <option value="">Seleccionar Tipo de Documento</option>
-            <option value="">Cédula de Ciudadanía</option>
-            <option value="">Cédula de Extranjería</option>
+            <option value="cedula de ciudadania">Cédula de Ciudadanía</option>
+            <option value="cedula de extranjeria">Cédula de Extranjería</option>
           </select>
         </div>
      </div> 
 
        <div class="inputfield">
           <label>Número Documento</label>
-          <input type="number" class="input" name="documento">
+          <input type="number" class="input" name="documento" required>
        </div>  
       <div class="inputfield">
           <label>Correo Misena</label>
-          <input type="text" class="input" name="correo">
+          <input type="text" class="input" name="correo" required>
        </div> 
       <div class="inputfield">
           <label>Contraseña</label>
-          <input type="text" name="pass" class="input">
+          <input type="text" name="password_user" class="input" required>
        </div> 
         <div class="inputfield">
           <label>Cargo</label>
           <div class="custom_select">
-            <select name="rol">
+            <select name="rol" >
               <option value="">Seleccionar Cargo</option>
-              <option value="male">Instructor</option>
-              <option value="female">Administrador</option>
+              <option value="Instructor">Instructor</option>
+              <option value="administrador">Administrador</option>
             </select>
           </div>
        </div>  
 
 
       <div class="inputfield">
-        <input type="submit" value="Registrar" class="btn">
+        <input type="submit" value="Registrar" class="btn" >
         </form>
     </div>
 </div>	
