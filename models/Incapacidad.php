@@ -26,5 +26,17 @@
            die($e->getMessage());
         }
     }
+
+    public function c(){
+			try{
+				$stm=parent::connect()->prepare("SELECT id, correo, descripcion, pdf FROM incapacidades ");
+				$stm->execute();
+				return $stm->fetchALL(PDO::FETCH_OBJ);
+			}catch(Exception $e){
+				die($e->getMessage());
+			}
+		}
+
+  
   }
 ?>

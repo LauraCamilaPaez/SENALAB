@@ -3,9 +3,12 @@
 class IncapacidadesController extends Incapacidad{
 
     public function index(){
-        require_once('views/incapacidades/envioIncapacidades.php');
+        require_once('views/incapacidades/index.php');
     }
 
+    public function envio(){
+        require_once('views/incapacidades/envioincapacidades.php');
+    }
 
 
        

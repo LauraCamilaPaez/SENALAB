@@ -70,7 +70,7 @@
         
         <div class="btn-group">
 
-            <a href="?m=index&c=Incapacidades" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Enviar Incapacidad</a>
+            <a href="?m=envio&c=Incapacidades" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Enviar Incapacidad</a>
 
             <div class="dropdown-menu">
                 <div class="custom-file">
