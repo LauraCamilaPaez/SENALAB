@@ -29,7 +29,7 @@
                 <ul class="navbar-nav col-9 justify-content-center"></ul>
                 <ul class="navbar-nav col-2 justify-content-end pr-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="?c=Usuarios&m=editar&id" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Usuario
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -43,7 +43,7 @@
         </nav>
 
         <?php
-        $usuario = $_SESSION['user'];        
+        $usuario = $_SESSION['id_usuario'];        
         ?>
     
         <section>
@@ -56,7 +56,7 @@
                     <p class="font-weight-bold m-0">Nombre</p>
                         <td><?php echo $usuario->nombre ?></td>
                         <p class="font-weight-bold m-0">Apellido</p>
-                        <td<?php echo $usuario->apellido ?>></td>
+                        <td><?php echo $usuario->apellido ?>></td>
                         <p class="font-weight-bold m-0">Email</p>
                         <td><?php echo $usuario->correo ?></td>
                         <p class="font-weight-bold m-0">Rol</p>
@@ -70,7 +70,7 @@
       
     <div class="d-flex  justify-content-around mar mx-auto">
         
-        <a href="#" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Editar Usuario</a>
+        <a href="?c=Usuarios&m=editar&id=" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Editar Usuario</a>
         
         <div class="btn-group">
 

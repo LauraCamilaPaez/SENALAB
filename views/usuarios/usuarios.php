@@ -55,6 +55,7 @@
 </div>
 
 <a href="?c=Admin&m=create" class="btn btn-info"> <i class="fas fa-plus"></i> Crear usuarios</a>
+<a href="?c=Admin&m=index" class="btn btn-danger"> <i class="fas fa-plus"></i> Salir</a>
 
 
 
