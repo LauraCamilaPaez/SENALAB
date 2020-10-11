@@ -7,35 +7,22 @@
     <link rel="stylesheet" href="assets/all/css/style.css">
     <title>Sena-lab</title>
 </head>
-<body style="background-color: #E1E1E1;">
+<body>
+
+    <header class="header-nav">
+                                <div class="container-nav">
+                                    <a href=""><img src="assets/img/logo-sena.png" alt="Logo Sena" class="logo"></a>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="?c=Usuarios&m=index">SenaLAB</a></li>
+                                            <li><a href="?c=Usuarios&m=index">Inicio</a></li>
+                                            <li><a href="">Contactanos</a></li>
+                                            <li><a href="?c=Login&m=index">Ingresar</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                    </header>
 <div class="container">
-
-<!-- barra de navegacion -->
-
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
-        <a class="navbar-brand" href="index.php">
-            <img src="assets/img/lsena.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
-            Sena-lab
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-
-            <ul class="navbar-nav ">
-                <li class="nav-item active">
-                    <h3 >Inicio</h3>
-                </li> 
-                <li class="nav-item active">
-                    <a class="nav-link" href="">Contactanos <span class="sr-only"></span></a>
-                </li> 
-                <li class="nav-item dropdown">
-                    <a class=" nav-link  text-right" href="?c=Login&m=index" >Ingresar</a>
-                </li>                    
-            </ul>                
-        </div>
-    </nav>
 
 
 <!-- CAROUSEL INDEX -->

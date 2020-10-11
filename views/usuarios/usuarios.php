@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/all/css/style.css">
 </head>
 <body>
-    
+<header class="header-nav">
+                            <div class="container-nav">
+                                <a href=""><img src="assets/img/logo-sena.png" alt="Logo Sena" class="logo"></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="?c=Usuarios&m=index">SenaLAB</a></li>
+                                        <li><a href="?c=Admin&m=index">Inicio</a></li>
+                                        <li><a href="">Contactanos</a></li>
+                                        <li><a href="?c=Login&m=destroy">Salir</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                </header>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -55,7 +68,6 @@
 </div>
 
 <a href="?c=Admin&m=create" class="btn btn-info"> <i class="fas fa-plus"></i> Crear usuarios</a>
-<a href="?c=Admin&m=index" class="btn btn-danger"> <i class="fas fa-plus"></i> Salir</a>
 
 
 

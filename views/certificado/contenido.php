@@ -11,9 +11,9 @@
 </head>
 <body>
     
-<?php
-foreach(parent::request() as $request){
-?>
+    <?php
+        $usuario = $_SESSION['id_usuario'];        
+    ?>
 
     <div id="cuadro">
         <h1>Servicio Nacional de Aprendizaje - SENA </h1>
@@ -24,7 +24,7 @@ foreach(parent::request() as $request){
         <h2>Líder Bienestar al Aprendiz Centro Electricidad, Electrónica y Telecomunicaciones</h2>
         <h3>El (la) suscrito representante de la empresa <b>SENA</b></h3>
         <h2><b>CERTIFICA</b></h2>
-        <p>Que el (la) señor (a) <p><?php echo $request->nombre ?></p> , identificado (a) con la cédula de ciudadanía No. 1000615160 y residente en Bogotá d.c, labora (ó) para esta empresa desde febrero del año 2018 hasta septiembre del año 2020, con un contrato a tiempo indefinido, desempeñando el cargo de: Instructor de Técnologo. Durante este tiempo, la persona ha devengado un salario mensual de: 3 500 000 pesos.
+        <p>Que el (la) señor (a) <?php echo $usuario->nombre ?> , identificado (a) con la <?php echo $usuario->tipo_documento ?> No. <?php echo $usuario->documento ?> y residente en Bogotá d.c, labora (ó) para esta empresa desde febrero del año 2018 hasta septiembre del año 2020, con un contrato a tiempo indefinido, desempeñando el cargo de: Instructor de Técnologo. Durante este tiempo, la persona ha devengado un salario mensual de: 3 500 000 pesos.
         </p>
 
         <p>
@@ -39,6 +39,5 @@ foreach(parent::request() as $request){
         <p>Nobel de Literatura</p>
     </div>
 
-<?php } ?>
 </body>
 </html>

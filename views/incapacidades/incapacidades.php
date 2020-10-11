@@ -7,40 +7,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<body style="background-color: #E1E1E1;">
+<body>
+<header class="header-nav">
+                            <div class="container-nav">
+                                <a href=""><img src="assets/img/logo-sena.png" alt="Logo Sena" class="logo"></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="?c=Usuarios&m=index">SenaLAB</a></li>
+                                        <li><a href="?c=Usuarios&m=index">Inicio</a></li>
+                                        <li><a href="">Contactanos</a></li>
+                                        <li><a href="?c=Login&m=index">Ingresar</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                </header>
     <div class="container ">
-        <!-- Barra de Navegación -->
-        <nav class=" navbar  navbar-dark bg-dark navbar-expand-md sticky-top">
-            <a class="navbar-brand " href="../index.html ">
-                <img src="assets/img/lsena.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
-                Sena-lab
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">                
-                <ul class="navbar-nav col-1 justify-content-start">
-                    <li class="nav-item ">
-                            <h3 >Inicio</h3>
-                    </li>                                        
-                </ul>
-                <ul class="navbar-nav col-9 justify-content-center"></ul>
-                <ul class="navbar-nav col-2 justify-content-end pr-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Administrador
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-right" href="#">Configuración</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-right" href="?c=index$m=index">Salir</a>
-                        </div>
-                    </li>   
-                </ul>
-            </div>
-        </nav>
-
         <div class="col-md-8 mx-auto py-4 "> 
 
         <table class="table border border-dark">

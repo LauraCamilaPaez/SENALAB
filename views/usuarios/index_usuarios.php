@@ -8,40 +8,21 @@
     <link rel="stylesheet" href="assets/all/css/style.css">
     <title>Index Usuario</title>
 </head>
-<body style="background-color: #E1E1E1;">
+<body>
+        <header class="header-nav">
+                            <div class="container-nav">
+                                <a href=""><img src="assets/img/logo-sena.png" alt="Logo Sena" class="logo"></a>
+                                <nav>
+                                    <ul>
+                                        <li><a href="?c=Usuarios&m=index">SenaLAB</a></li>
+                                        <li><a href="?c=Usuarios&m=index">Inicio</a></li>
+                                        <li><a href="">Contactanos</a></li>
+                                        <li><a href="?c=Login&m=destroy">Ingresar</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                </header>
     <div class="container ">
-        <!-- Barra de Navegación -->
-        <nav class=" navbar  navbar-dark bg-dark navbar-expand-md sticky-top">
-            <a class="navbar-brand " href="?c=Usuarios&m=index">
-                <img src="assets/img/lsena.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
-                Sena-lab
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">                
-                <ul class="navbar-nav col-1 justify-content-start">
-                    <li class="nav-item ">
-                        <h3 >Inicio</h3>
-                    </li>                                        
-                </ul>
-                <ul class="navbar-nav col-9 justify-content-center"></ul>
-                <ul class="navbar-nav col-2 justify-content-end pr-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="?c=Usuarios&m=editar&id" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Usuario
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-right" href="#">Configuración</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-right" href="?c=Login&m=destroy">Salir</a>
-                        </div>
-                    </li>   
-                </ul>
-            </div>
-        </nav>
-
         <?php
         $usuario = $_SESSION['id_usuario'];        
         ?>
@@ -56,7 +37,7 @@
                     <p class="font-weight-bold m-0">Nombre</p>
                         <td><?php echo $usuario->nombre ?></td>
                         <p class="font-weight-bold m-0">Apellido</p>
-                        <td><?php echo $usuario->apellido ?>></td>
+                        <td><?php echo $usuario->apellido ?></td>
                         <p class="font-weight-bold m-0">Email</p>
                         <td><?php echo $usuario->correo ?></td>
                         <p class="font-weight-bold m-0">Rol</p>
@@ -70,11 +51,10 @@
       
     <div class="d-flex  justify-content-around mar mx-auto">
         
-        <a href="?c=Usuarios&m=editar&id=" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Editar Usuario</a>
-        
+       
         <div class="btn-group">
 
-            <a href="?m=envio&c=Incapacidades" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Enviar Incapacidad</a>
+            <a href="?m=envio&c=Incapacidades&id=" type="button" class="btn " style="width: 240px; height: 40px;"   aria-haspopup="true" aria-expanded="false">Enviar Incapacidad</a>
 
             <div class="dropdown-menu">
                 <div class="custom-file">
@@ -83,25 +63,12 @@
                 </div>
             </div>
           </div> 
-        <div class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Solicitar Certificados
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="modulos/1_usuarios/Usuario.html">Obra o Labor</a>
-              <a class="dropdown-item" href="#">Termino Fijo</a>
-              <a class="dropdown-item" href="#">Termino Indefinido</a>
-            </div>
-          </div> 
-    </div>
+        <div class="btn-group">    
+            <a href="?c=Certificados&m=index" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Certificados</a>      
+        </div>
 
 
-    <footer class="text-center p-3 mb-2 bg-dark text-light  "  >
-
-        <p>Todos los derechos reservados a Sena-lab</p>
-        <p class=" "> Copyright © 2020 </p>
-                
-    </footer>
+ 
 
 
 

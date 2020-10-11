@@ -6,34 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>incapacidades</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/all/css/style.css">
 </head>
-<body style="background-color: #E1E1E1;">
+<body>
+
+    <header class="header-nav">
+                                <div class="container-nav">
+                                    <a href=""><img src="assets/img/logo-sena.png" alt="Logo Sena" class="logo"></a>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="?c=Usuarios&m=index">SenaLAB</a></li>
+                                            <li><a href="?c=Usuarios&m=index">Inicio</a></li>
+                                            <li><a href="">Contactanos</a></li>
+                                            <li><a href="?c=Login&m=index">Ingresar</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                    </header>
     <div class="container ">
- <!-- Barra de Navegación -->
- <nav class=" navbar  navbar-dark bg-dark navbar-expand-md sticky-top">
-            <a class="navbar-brand " href="?c=Admin&m=index">
-                <img src="assets/img/lsena.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
-                Sena-lab
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">                
-                <ul class="navbar-nav col-1 justify-content-start">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="?c=Admin&m=index">Volver<span class="sr-only"></span></a>
-                    </li>                                        
-                </ul>
-                <ul class="navbar-nav col-9 justify-content-center"></ul>
-                <ul class="navbar-nav col-2 justify-content-end pr-0">
-                     
-                </ul>
-            </div>
-        </nav>
-
-
-
     <div class="container">
        <div class="row">
             <div class="col-md-12">

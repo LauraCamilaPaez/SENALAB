@@ -1,7 +1,81 @@
+
+/* Body */
+body{
+  margin: 0;
+  background: mintcream;
+}
+
+/* Fuente*/
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Nav*/
+.container-nav{
+  width: 80%;
+  margin: 0 auto;
+}
+.header-nav{
+  background-color: #383332;
+}
+.header-nav::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.logo{
+  float: left;
+  width: 6rem;
+  height: 6rem;
+  padding: 10px 0;
+}
+nav{
+  float: right;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 30px;
+  position: relative;
+}
+
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+nav a:hover{
+  color: #000000;
+  text-decoration: none;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
 /* ESTILOS DEL INDEX PRINCIPAL */
-
-
-
 .espacio{
     margin-right: 40px;
 }
@@ -466,3 +540,4 @@ a:hover{
   background-color: #ffff;
   height: 508px;
 }
+
