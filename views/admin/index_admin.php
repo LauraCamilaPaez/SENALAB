@@ -72,16 +72,9 @@
 
 
     <div class="d-flex justify-content-around mar">
+        
         <div class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Usuario
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="?c=Admin&m=create">Crear Usuario</a>
-              <a class="dropdown-item" href="?c=Admin&m=create">Editar Usuario</a>
-              <a class="dropdown-item" href="#">Eliminar Usuario</a>
-              
-            </div>
+                <a href="?c=Usuarios&m=usuarios" type="button" class="btn btn-info "  aria-haspopup="true" aria-expanded="false">Usuario</a>    
         </div>
         
         <div class="btn-group">

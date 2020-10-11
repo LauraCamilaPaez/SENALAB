@@ -21,6 +21,25 @@ class Admin extends DB{
         }
     }
 
+    public function destroyDato($UsuarioID){
+        try{
+          $stm=parent::connect()->prepare("DELETE FROM usuario WHERE id_usuario = ?");
+          $stm->bindParam(1,$UsuarioID,PDO::PARAM_INT);
+          $stm->execute();
+        }catch(Exception $e){
+           die($e->getMessage());
+        }
+    }
+
+    public function actualizar($fk_rol,$nombre,$apellido,$correo,$password_user,$tipo_documento,$documento, $id){
+        try{
+            $stm = parent::connect()->prepare("UPDATE usuario SET fk_rol='$fk_rol', nombre='$nombre', apellido='$apellido', correo='$correo', password_user='$password_user', tipo_documento='$tipo_documento', documento='$documento'  WHERE id_usuario=$id");
+            $stm->execute();
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+    }
+
     public function requestEmail($email, $password){
         try{
             $stm = parent::connect()->prepare('SELECT * FROM usuario WHERE correo = ? AND password_user = ? ');

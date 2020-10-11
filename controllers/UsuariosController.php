@@ -1,21 +1,20 @@
 <?php
 
-class UsuariosController{
+class UsuariosController extends Usuario{
 
     public function index(){
         require_once('views/usuarios/index_usuarios.php');
     }
     
-    public function search_ajax(){
-        $nombre='%'.$_POST['dato'].'%';
-        foreach (parent::searchM($nombre) as $q){
-          
-  
-          echo $q->nombres.' |'.$q->apellidos.' | '.$q->correo.' | '.$q->direccion.'<br>';
-        }
-        
-      }
+    public function usuarios(){
+        require_once('views/usuarios/usuarios.php'); 
+    }
 
+	public function editar(){
+		require_once('views/usuarios/editar_usuario.php');
+	}
+
+    
 }
 
 ?>

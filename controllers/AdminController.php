@@ -7,7 +7,7 @@ class AdminController extends Admin{
     }
     
 	public function create(){
-		require_once('views/admin/crear.php');
+		require_once('views/usuarios/crear_usuario.php');
 	}
 
 	public function store(){
@@ -20,8 +20,30 @@ class AdminController extends Admin{
 		$tipo_documento = $_POST['tipo_documento'];
 		$documento = $_POST['documento'];
 		parent::insertar($fk_rol,$nombre,$apellido,$correo,$password_user,$tipo_documento,$documento);
-		header('location:?c=Admin&m=index');
+		header('location:?c=Usuarios&m=usuarios');
 	}
+
+
+	public function update(){
+        $id = $_POST['id'];
+		$fk_rol = $_POST['fk_rol'];
+		$nombre = $_POST['nombre'];
+		$apellido = $_POST['apellido'];
+		$correo = $_POST['correo'];
+		$password_user = $_POST['password_user'];
+		$tipo_documento = $_POST['tipo_documento'];
+		$documento = $_POST['documento'];
+        parent::actualizar($fk_rol, $nombre, $apellido, $correo, $password_user,  $tipo_documento, $documento, $id );
+        header('location:?c=Usuarios&m=usuarios');
+      }
+
+
+	public function destroy(){
+		parent::destroyDato($_REQUEST['id']);
+		header("location:?c=Usuarios&m=usuarios");
+	  }
+
+	  
 
 
 }
