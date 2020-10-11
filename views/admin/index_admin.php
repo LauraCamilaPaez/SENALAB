@@ -42,7 +42,7 @@
         </nav>
 
         <?php
-        $usuario = $_SESSION['user'];        
+        $usuario = $_SESSION['id_usuario'];        
         ?>
 
         <section >
@@ -55,7 +55,7 @@
                         <p class="font-weight-bold m-0">Nombre</p>
                         <td><?php echo $usuario->nombre ?></td>
                         <p class="font-weight-bold m-0">Apellido</p>
-                        <td<?php echo $usuario->apellido ?>></td>
+                        <td><?php echo $usuario->apellido ?>></td>
                         <p class="font-weight-bold m-0">Email</p>
                         <td><?php echo $usuario->correo ?></td>
                         <p class="font-weight-bold m-0">Rol</p>
