@@ -39,7 +39,7 @@
     </head>
 
     <section>
-        <div class="col-4">
+        <div class="colsv col-md-4">
             <ul class="list-group">
                 <li class="list-group-item list-group-item-warning" style="color: #000000;">Administrador</li>
                 <li class="list-group-item">Crear Usuarios</li>
@@ -49,7 +49,7 @@
             </ul>
         </div>
 
-        <div class="col-md-4" >
+        <div class="colsv col-md-4" >
             <ul class="list-group">
                 <li class="list-group-item list-group-item-success" style="color: #000000;">Usuario</li>
                 <li class="list-group-item ">Editar Perfil</li>
