@@ -541,3 +541,19 @@ a:hover{
   height: 508px;
 }
 
+/*style supervisor*/
+
+.col-md-4{
+  margin-left: 120px;
+  float: left;	
+  color: black;
+  margin-bottom: 120px;		
+}
+.footer{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 10rem;
+  margin-top: 25rem;
+  text-align: center;
+  
+}
