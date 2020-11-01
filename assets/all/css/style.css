@@ -558,3 +558,11 @@ a:hover{
   text-align: center;
   
 }
+
+.svfooter{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 10rem;
+  margin-top: 25rem;
+  text-align: center;
+}
